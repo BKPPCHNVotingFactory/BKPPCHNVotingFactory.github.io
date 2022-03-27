@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+
+    <title>BKPP_CHNFactory</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./bkpp_factory_fan.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./css/animate.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/variables.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/media.css" />
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="page_container">
+      <!-- 导航 -->
+      <div class="tab_nav container-fluid navbar-default" role="navigation">
+        <div class="tab_right_box navbar-header">
+          <div style="white-space: nowrap">
+            <img
+              class="tab_right_img"
+              alt="BKPP_CHNVotingFactory"
+              src="./assets/tab_icon.png"
+            />
+            <span>BKPP_CHNVotingFactory</span>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#showMoreBtn"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="showMoreBtn">
+          <ul id="myMenu">
+            <li data-menuanchor="Home">
+              <a href="#Home"  class="p1 tab_active">BKPP_CHNFactory</a>
+            </li>
+            <!-- <li data-menuanchor="VotingMethods">
+              <a href="./pages/vote.html" class="p2" target="_self">投票教程 | VotingMethods</a>
+            </li> -->
+            <li data-menuanchor="VotingMethods">
+              <a href="./pages/statistical.html" class="p2" target="_self">投票统计 | Vote statistics</a>
+            </li>
+            <li data-menuanchor="AboutUs">
+              <a href="./pages/about-us.html" class="p3">关于 | About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 主页 home -->
+      <div class="content" id="Home">
+        <div class="content_img_box animate__animated animate__bounceInUp">
+          <img src="./assets/bkpp_bc.png" />
+        </div>
+        <div class="bar" data-move-x="-200px" data></div>
+        <div class="content_text_box">
+          <div class="content_width">
+            <div class="text_title animate__animated animate__fadeInLeft">
+              <h2>BKPP_CHNVotingFactory</h2>
+              <h5>All for BKPP</h5>
+            </div>
+            <div class="text_content animate__animated animate__fadeInRight">
+              <h6>
+                BKPP Chinese Voting Factory started on Jan. 08, 2021. Its
+                original establishment was meant only to vote for ITSAY in the
+                Asian BL Series of 2020 Award. We have been expanding since the
+                very beginning at an amazing rate. Then we decided to continue
+                as a group to vote for BKPP in other polls. SO HERE WE ARE! We
+                will keep supporting and voting for BKPP.
+              </h6>
+            </div>
+            <div class="text_footer">
+              <h6>Read More →</h6>
+            </div>
+          </div>
+        </div>
+        <div class="content_contact_box animate__animated animate__bounceInUp">
+          <div class="contact_title">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="contact_email">
+            <a
+              href="mailto:bkpp.votingfactory@gmail.com"
+              target="_self"
+              class="h8"
+            >
+              bkpp.votingfactory@gmail.com
+            </a>
+          </div>
+          <div class="contact_app">
+            <div class="app_left" onclick="clickTab()">
+              <a
+                href="https://weibo.com/u/7550212237"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="./assets/weibo.png" />
+              </a>
+              <a
+                href="https://twitter.com/BKPPCHNVoteTeam?s=09"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="./assets/tt.png" />
+              </a>
+              <a
+                href="https://www.instagram.com/bkpp_chnvotingfactory/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img src="./assets/ig.png" />
+              </a>
+            </div>
+            <div class="app_right h8">@BKPP_CHNVotingFactory</div>
+          </div>
+          <!-- <div class="contact_input_box">
+            <label>
+              <input
+                name="name"
+                placeholder="Name"
+                class="h8"
+                maxlength="100"
+              />
+            </label>
+            <label>
+              <input
+                name="email"
+                placeholder="Email"
+                class="h8"
+                pattern="^.+@.+\.[a-zA-Z]{2,63}$"
+                maxlength="250"
+              />
+            </label>
+            <label>
+              <input name="subject" class="h8" placeholder="Subject" />
+            </label>
+            <label>
+              <textarea
+                class="h8"
+                placeholder="Type your message here..."
+                rows="5"
+              ></textarea>
+            </label>
+            <div class="submit_btn">
+              <div class="btn_result">
+                <span class="base_font h5">SUBMIT</span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- 投票教程 -->
+      <div class="vote_content" id="VotingMethods">
+
+      </div>
+
+      <!-- footer -->
+      <div class="footer_box">
+        <div class="footer_style">
+          <p>© 2021-2022 |&nbsp;</p>
+          <a href="https://beian.miit.gov.cn" target="_blank">
+            晋ICP备2021004852号-1 |&nbsp;
+          </a>
+          <a href="https://icp.gov.moe/?keyword=20220128" target="_blank">萌ICP备20220128号</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>

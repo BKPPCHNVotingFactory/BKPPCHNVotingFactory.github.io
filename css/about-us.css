@@ -1,0 +1,72 @@
+.about_us_content {
+  padding-top: calc(15% + 80px);
+  color: #fff;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.left_box {
+}
+
+.left_box img {
+  width: 413px;
+  height: 457px;
+}
+.right_box {
+  background-color: #000000;
+  padding: 5%;
+}
+
+.right_text {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.right_zh_text {
+  font-size: 14px;
+  margin-top: 10px;
+  text-indent: 2em;
+}
+.vote_all {
+  text-indent: 2em;
+  margin-top: 10px;
+}
+
+.bkpp_fa {
+  font-size: 16px;
+  text-align: right;
+}
+
+.contact_us {
+  margin-top: 5%;
+  background-color: #000;
+  padding: 5% 15%;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.contact_app {
+  margin-bottom: 3%;
+}
+
+.contact_app a {
+  color: #fff;
+}
+
+.contact_app img {
+  width: 26px;
+  height: 26px;
+}
+.contact_email a {
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+.contact_us_left .h2 {
+  font-size: 24px;
+  /* margin: 0; */
+}
+.contact_us_left {
+  font-size: 16px;
+}

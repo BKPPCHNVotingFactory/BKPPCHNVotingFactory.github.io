@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expries" content="-1" />
+
+    <title>投票统计</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../bkpp_factory_fan.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap@5.min.css" />
+    <link rel="stylesheet" href="../css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/variables.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/statistical.css" />
+    <link rel="stylesheet" type="text/css" href="../css/media.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="../js/bootstrap@5.min.js"></script> -->
+  </head>
+  <body>
+    <div class="page_container">
+      <!-- 导航 -->
+      <div class="tab_nav container-fluid navbar-default" role="navigation">
+        <div class="tab_right_box navbar-header">
+          <div style="white-space: nowrap">
+            <img
+              class="tab_right_img"
+              alt="BKPP_CHNVotingFactory"
+              src="../assets/tab_icon.png"
+            />
+            <a href="../index.html" target="_self" class="tab_active">
+              <span>BKPP_CHNVotingFactory</span>
+            </a>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#showMoreBtn"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="showMoreBtn">
+          <ul id="myMenu">
+            <!-- <li data-menuanchor="Home">
+              <a href="../index.html" class="p1" target="_self"
+                >BKPP_CHNFactory</a
+              >
+            </li> -->
+            <li data-menuanchor="Statistical">
+              <a href="javascript:;" class="p4 tab_active" target="_self"
+                >投票统计 | Vote statistics</a
+              >
+            </li>
+            <!-- <li data-menuanchor="AboutUs">
+              <a href="./about-us.html" class="p3" target="_self"
+                >关于 | About us</a
+              >
+            </li> -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- 投票教程 -->
+      <div class="statistical_content">
+        <section
+          class="statistical_top_box animate__animated animate__zoomInDown"
+        >
+          <div class="statistical_top_title">
+            <h1>​KCL18 2022 网页Vote统计</h1>
+          </div>
+          <div class="statistical_top_content">
+            <p class="h8">​Komchadluek Awards (KCL) 投票正火热进行中。</p>
+          </div>
+          <div class="pla_box"></div>
+        </section>
+
+        <div id="statistical_json"></div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer_box">
+        <div class="footer_style">
+          <p>© 2021-2022 |&nbsp;</p>
+          <a href="https://beian.miit.gov.cn" target="_blank">
+            晋ICP备2021004852号-1 |&nbsp;
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/statistical.js"></script>
+</html>

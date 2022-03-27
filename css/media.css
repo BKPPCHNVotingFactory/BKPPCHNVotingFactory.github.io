@@ -1,0 +1,156 @@
+@media (max-width: 760px) {
+  .tab_nav {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .tab_right_box {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .content_img_box img {
+    width: 100%;
+  }
+
+  .text_title h2 {
+    font-size: 18px;
+  }
+
+  .text_title h5 {
+    font-size: 18px;
+  }
+
+  .text_content h6,
+  .text_footer h6,
+  .contact_title h2 {
+    font-size: 16px;
+  }
+
+  .content_text_box {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .contact_email .h8 {
+    font-size: 13px;
+  }
+
+  .contact_app {
+    flex-direction: column;
+  }
+
+  .app_right.h8 {
+    font-size: 12px;
+  }
+
+  .app_left img {
+    width: 27px;
+    height: 27px;
+  }
+
+  #showMoreBtn {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #000;
+    margin: 0;
+  }
+
+  #myMenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_box a,
+  .footer_box p {
+    font-size: 12px;
+  }
+
+  .footer_box {
+    padding-left: 10px;
+  }
+
+  /* vote */
+  .vote_top_box {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: calc(10% + 80px);
+    padding: 5% 5%;
+  }
+
+  .vote_top_title h1 {
+    font-size: 21px;
+  }
+
+  .vote_top_content p {
+    font-size: 12px;
+  }
+
+  .vote_detail_box {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .vote_detail_right {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail_right_sort,
+  .detail_right_title {
+    font-size: 14px;
+  }
+
+  .detail_right_title {
+    margin: 0;
+  }
+
+  .detail_right_from,
+  .detail_right_last {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .max_hidden {
+    display: block;
+  }
+
+  .max_show {
+    display: none;
+  }
+  .vote_detail_right {
+    width: 100%;
+    padding-left: 3%;
+  }
+
+  .footer_style {
+    flex-direction: column;
+  }
+  .detail_top_box {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50%;
+  }
+  .detail_top_left {
+    display: none;
+  }
+
+  .detail_top_right {
+    width: 100%;
+  }
+
+  .detail_top_right h1 {
+    font-size: 20px;
+  }
+
+  .about_us_content .left_box {
+    display: none;
+  }
+
+  .contact_us {
+    flex-direction: column;
+  }
+  
+}

@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+
+body {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+h1 {
+  font: normal normal normal 40px/1.4em proxima-n-w01-reg, sans-serif;
+}
+
+h2 {
+  font: normal normal normal 30px/1.4em avenir-lt-w01_85-heavy1475544,
+    sans-serif;
+  font: normal normal normal 16.875px/1.4em avenir-lt-w01_85-heavy1475544,
+    sans-serif;
+}
+
+h3,
+.h3 {
+  font: normal normal normal 60px/1.4em lulo-clean-w01-one-bold, sans-serif;
+}
+
+h6 {
+  font: normal normal normal 22px/1.4em didot-w01-italic, serif;
+  font: normal normal normal 12px/1.4em didot-w01-italic, serif;
+  font-size: 22px;
+}
+
+h5,
+.h5 {
+  font: normal normal normal 25px/1.4em avenir-lt-w01_35-light1475496,
+    sans-serif;
+  font: normal normal normal 16.875px/1.4em avenir-lt-w01_35-light1475496,
+    sans-serif;
+}
+
+.p1 {
+  font: normal normal normal 13px/1.4em avenir-lt-w01_35-light1475496,
+    sans-serif;
+  font: normal normal normal 16px/1.4em din-next-w01-light, din-next-w02-light,
+    din-next-w10-light, sans-serif;
+}
+
+.h8 {
+  font: normal normal normal 16px/1.4em didot-w01-italic, serif;
+  font: normal normal normal 13.03209968px/1.4em didot-w01-italic, serif;
+}
+
+.base_font {
+  font: normal normal normal 16px/1.4em cinzel, serif;
+  font: normal normal normal 11.954648526077099px/1.4em didot-w01-italic, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+ol,
+ul,
+.navbar-toggle {
+  margin: 0;
+}

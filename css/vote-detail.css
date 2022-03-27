@@ -1,0 +1,61 @@
+.vote_detail_content {
+  margin-bottom: 200px;
+  height: calc(100% - 200px);
+}
+
+.detail_top_box {
+  display: flex;
+  padding: 10% 10% 5% 10%;
+  padding-top: calc(5% + 80px);
+}
+
+.detail_top_box img {
+  width: 100%;
+}
+
+.detail_top_right {
+  background-color: #000;
+  min-width: 40%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.detail_top_right .detail_top_right_container {
+  padding: 10% 15%;
+}
+
+.detail_top_right h1 {
+  font-size: 32px;
+}
+
+.detail_top_right_bt {
+  padding-top: 5%;
+}
+
+.detail_top_right_bt p {
+  font-size: 14px;
+  font-family: basic, sans-serif;
+}
+
+.detail_top_right_bt p a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+/* 表单 */
+.detail_all {
+  display: flex;
+  justify-content: center;
+}
+.detail_all_box {
+  position: relative;
+  /* overflow: hidden; */
+}
+.detail_all_top {
+  max-width: 306px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}

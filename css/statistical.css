@@ -1,0 +1,89 @@
+div,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.statistical_content {
+  color: #fff;
+  margin: 80px 0 200px;
+}
+
+.statistical_top_box {
+  background-color: #000;
+  margin: 10% 15% 0 15%;
+  margin-top: calc(5% + 80px);
+  padding: 2% 3%;
+  position: relative;
+  overflow: hidden;
+}
+
+.statistical_top_title h1 {
+  font-size: 40px;
+}
+
+.statistical_top_content {
+  margin-top: 4%;
+}
+
+.statistical_top_content p {
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+.pla_box {
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  width: 100%;
+}
+
+.statistical_list {
+  font: normal normal normal 40px/1.4em proxima-n-w01-reg, sans-serif;
+  font-size: 13px;
+  margin: 5% 15% 0 15%;
+  background-color: #000;
+  opacity: 0.89;
+}
+
+.statistical_list header {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.statistical_list .group_header {
+  padding: 5px 0;
+}
+
+.statistical_list .group_title {
+  display: inline-block;
+  background-color: #212529;
+  padding: 5px 15px;
+  border-radius: 0px 20px 20px 0px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.statistical_list .group_title span:first-child {
+  color: #b39f79;
+  font-size: 15px;
+}
+
+.statistical_list .group_title span {
+  padding-right: 15px;
+}
+
+.statistical_list .group_vote_list {
+  padding: 0 20px;
+}
+
+.statistical_list .group_vote_list .active_item td,
+.statistical_list .group_vote_list .active_item th {
+  color: #b39f79 !important;
+  font-size: 14px;
+  text-shadow: 0 0 .1px, 0 0 .3px;
+}
