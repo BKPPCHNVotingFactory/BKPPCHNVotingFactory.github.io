@@ -22,20 +22,43 @@ votes = pageProps['votes']
 #     json.dump(json_obj, fp, ensure_ascii=False)
 
 # 数组集合
-groupArr = [{
-    "category_id": "group_1",
-    "sumScore": 0,
-    "item_id": ["item_6", "item_48"],
-    "item_score": 0,
-    "category_name": "KA2. เพลงไทยสากล ยอดนิยม"
-}]
+groupArr = [
+    {
+        "category_id": "group_4",
+        "sumScore": 0,
+        "item_id": ["item_10"],
+        "item_score": 0,
+        "category_name": "人气歌手"
+    },
+    {
+        "category_id": "group_6",
+        "sumScore": 0,
+        "item_id": ["item_33"],
+        "item_score": 0,
+        "category_name": "人气情侣"
+    },
+    {
+        "category_id": "group_7",
+        "sumScore": 0,
+        "item_id": ["item_229", "item_293"],
+        "item_score": 0,
+        "category_name": "人气演员"
+    },
+    {
+        "category_id": "group_9",
+        "sumScore": 0,
+        "item_id": ["item_58"],
+        "item_score": 0,
+        "category_name": "热门剧集"
+    },
+]
 
 # 组装之后的数组
 resultArr = []
 for groupItem in groupArr:
     groupObj = {
-        "sumScore": 0,
-        # "sumScore": '/',
+        # "sumScore": 0,
+        "sumScore": '/',
         "list": [],
         "category_id": '',
         "category_name": ''
@@ -45,18 +68,26 @@ for groupItem in groupArr:
         if groupItem['category_id'] == voteItem['category_id']:
             groupObj['category_id'] = groupItem['category_id']
             groupObj['category_name'] = groupItem['category_name']
-            groupObj['sumScore'] += voteItem['raw_score']
+            # groupObj['sumScore'] += voteItem['raw_score']
             for item_vote_id in groupItem['item_id']:
                 if voteItem['item_id'] == item_vote_id:
                     active_item = 1
             groupObj['list'].append({
                 "item_name": voteItem['item_name'],
-                "score": voteItem['raw_score'],
-                # "score": "/",
+                # "score": voteItem['raw_score'],
+                "score": "/",
                 "active_item": active_item,
-                "weight": voteItem['score']
-                # "weight": "/"
+                # "weight": voteItem['score']
+                "weight": "/"
             })
+    # for item in groupObj['list']:
+    #     item['weight'] = ("%.2f" %
+    #                       ((item['score'] / groupObj['sumScore']) * 100)) + '%'
+
+    # # 排序
+    # groupObj['list'] = sorted(groupObj['list'],
+    #                           key=lambda i: i['score'],
+    #                           reverse=True)
     resultArr.append(groupObj)
 
 
