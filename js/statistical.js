@@ -41,7 +41,11 @@ $(document).ready(function () {
             }),
             $("<td/>", {
               html: item_list.weight,
-            })
+            }),
+            $("<td/>", {
+              html: `<img src="${item_list.item_image}" >`,
+              class: "image-base"
+            }),
           )
         );
       }
@@ -82,7 +86,11 @@ $(document).ready(function () {
                 $("<th/>", {
                   scope: "col",
                   html: "比例",
-                })
+                }),
+                $("<th/>", {
+                  scope: "col",
+                  html: "官照",
+                }),
               )
             ),
             tbodyDom

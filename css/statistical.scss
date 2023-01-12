@@ -11,7 +11,7 @@ p {
 
 .statistical_top_box {
   background-color: #000;
-  margin: 10% 15% 0 15%;
+  margin: 10% 10% 0 10%;
   margin-top: calc(5% + 80px);
   padding: 2% 3%;
   position: relative;
@@ -44,7 +44,7 @@ p {
 .statistical_list {
   font: normal normal normal 40px/1.4em proxima-n-w01-reg, sans-serif;
   font-size: 13px;
-  margin: 5% 15% 0 15%;
+  margin: 5% 10% 0 10%;
   background-color: #000;
   opacity: 0.89;
 
@@ -91,6 +91,10 @@ p {
         text-shadow: 0 0 .1px, 0 0 .3px;
       }
     }
+  }
+
+  .image-base {
+    width: 80px;
   }
 
 }

@@ -54,8 +54,9 @@ for groupItem in groupArr:
                 "score": voteItem['raw_score'],
                 # "score": "/",
                 "active_item": active_item,
-                "weight": voteItem['score']
+                "weight": voteItem['score'],
                 # "weight": "/"
+                "item_image": voteItem['item_image']
             })
     resultArr.append(groupObj)
 
