@@ -1,0 +1,47 @@
+# Actions Name
+
+name: DelImage
+
+# 在什么时候触发， push 是 git push 时触发，可以设置定时
+on:
+  # push:
+    # branches: [ dev ]
+  # pull_request:
+    # branches: [ main ]
+  # 定时器
+  schedule:
+    - cron: "50 17 * * *"
+  # 允许手动执行 
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Update delImage
+        run: |
+          cd json
+          python get_compare_del.py
+
+      - name: Commit delImage
+        run: |
+          git config --global user.email 2556940481@qq.com
+          git config --global user.name xiao_chang
+          git add .
+          #git commit -m"action:`date +'%Y-%m-%d'`"
+          git commit -m"del action:`date`"
+          git pull --rebase
+      - name: Push DelImage Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "main"
