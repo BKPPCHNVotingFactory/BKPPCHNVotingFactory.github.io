@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  // 获取图片并写入
+  $("#statistical_img").append("<img src='../json/compareVote.png?temp='" + Math.random() + "'>");
+
   // 获取数据
   let voteArr = [];
 
