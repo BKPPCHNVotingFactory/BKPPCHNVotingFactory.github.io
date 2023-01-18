@@ -7,4 +7,4 @@ if (os.path.exists("compareVote.png")):
 else:
     print("要删除的文件不存在！")
 
-# 完成
+# #完成
