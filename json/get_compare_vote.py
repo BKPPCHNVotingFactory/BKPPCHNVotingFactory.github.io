@@ -58,3 +58,5 @@ df.drop(labels = [
 # 数据基础统计
 df_style = df.style.background_gradient()
 dfi.export(obj = df_style,filename = "compareVote.png",fontsize = 30)
+
+# 完成
