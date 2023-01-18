@@ -8,6 +8,8 @@ on:
     # branches: [ dev ]
   pull_request:
     branches: [ main ]
+  # 允许手动执行 
+  workflow_dispatch:
   # schedule:
   #   - cron: "55 17 * * *"
 jobs:
