@@ -1,4 +1,5 @@
 # 引入 pandas 数据
+import os,sys
 import pandas as pd
 import json
 import time
@@ -54,6 +55,13 @@ df = pd.DataFrame(resultPd)
 df.drop(labels = [
     'บิวกิ้น พุฒิพงศ์ - BK', 'พีพี กฤษฎ์ - PP', 'นุนิว ชวรินทร์ - Duo'
 ], axis=1)
+
+# # 删除图片
+# print("目录为: %s" %os.listdir(os.getcwd()))
+if (os.path.exists("compareVote.png")):
+    os.remove("compareVote.png")
+else:
+    print("要删除的文件不存在！")
 
 # 数据基础统计
 df_style = df.style.background_gradient()
