@@ -1,6 +1,13 @@
 $(document).ready(function () {
   // 获取图片并写入
-  $("#statistical_img").append("<img src='../json/compareVote.png?temp='" + Math.random() + "'>");
+  $("#statistical_img").append(
+    "<img src='../json/compareVote.png?temp='" + Math.random() + "'>"
+  );
+
+  // 替换为默认图片
+  $("img").on("error", function () {
+    $(this).attr("src", "../json/compareVoteError.png");
+  });
 
   // 获取数据
   let voteArr = [];
@@ -47,8 +54,8 @@ $(document).ready(function () {
             }),
             $("<td/>", {
               html: `<img src="${item_list.item_image}" >`,
-              class: "image-base"
-            }),
+              class: "image-base",
+            })
           )
         );
       }
@@ -93,7 +100,7 @@ $(document).ready(function () {
                 $("<th/>", {
                   scope: "col",
                   html: "官照",
-                }),
+                })
               )
             ),
             tbodyDom
