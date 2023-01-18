@@ -33,17 +33,17 @@ jobs:
           cd json
           python get_compare_vote.py
 
-      # - name: Commit CompareImage
-      #   run: |
-      #     git config --global user.email 2556940481@qq.com
-      #     git config --global user.name xiao_chang
-      #     git add .
-      #     #git commit -m"action:`date +'%Y-%m-%d'`"
-      #     git commit -m"action:`date`"
-      #     git pull --rebase
-      # - name: Push CompareImage Changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: "main"
+      - name: Commit CompareImage
+        run: |
+          git config --global user.email 2556940481@qq.com
+          git config --global user.name xiao_chang
+          git add .
+          #git commit -m"action:`date +'%Y-%m-%d'`"
+          git commit -m"compare action:`date`"
+          git pull --rebase
+      - name: Push CompareImage Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "main"
 
