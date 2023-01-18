@@ -6,7 +6,8 @@ name: CompareVote
 on:
   # push:
     # branches: [ dev ]
-  pull_request:
+  # pull_request:
+  push:
     branches: [ main ]
   # 允许手动执行 
   workflow_dispatch:
