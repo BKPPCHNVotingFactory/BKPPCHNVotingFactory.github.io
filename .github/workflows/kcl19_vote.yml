@@ -10,7 +10,6 @@ on:
   push:
     paths:
       - 'json/vote.json'
-      - 'json/get_compare_vote.py'
   # 允许手动执行 
   workflow_dispatch:
   # schedule:
