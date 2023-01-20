@@ -9,7 +9,7 @@ on:
   # pull_request:
   push:
     paths:
-      - 'json/vote.json'
+      - 'json/**'
   # 允许手动执行 
   workflow_dispatch:
   # schedule:
