@@ -28,19 +28,21 @@ groupArr = [{
     "item_id": ["item_6", "item_48"],
     "item_score": 0,
     "category_name": "KA2. เพลงไทยสากล ยอดนิยม"
-}, {
-    "category_id": "group_3",
-    "sumScore": 0,
-    "item_id": ["item_6", "item_48"],
-    "item_score": 0,
-    "category_name": "KA4. คู่จิ้น Y ยอดนิยม"
-}, {
-    "category_id": "group_6",
-    "sumScore": 0,
-    "item_id": ["item_6", "item_48"],
-    "item_score": 0,
-    "category_name": "KA7. ละครไทย ซีรีส์ไทย ยอดนิยม"
-}]
+}, 
+# {
+#     "category_id": "group_3",
+#     "sumScore": 0,
+#     "item_id": ["item_6", "item_48"],
+#     "item_score": 0,
+#     "category_name": "KA4. คู่จิ้น Y ยอดนิยม"
+# }, {
+#     "category_id": "group_6",
+#     "sumScore": 0,
+#     "item_id": ["item_6", "item_48"],
+#     "item_score": 0,
+#     "category_name": "KA7. ละครไทย ซีรีส์ไทย ยอดนิยม"
+# }
+]
 
 # 组装之后的数组
 resultArr = []
