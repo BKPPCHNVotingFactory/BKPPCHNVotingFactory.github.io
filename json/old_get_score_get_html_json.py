@@ -46,8 +46,8 @@ groupArr = [{
 resultArr = []
 for groupItem in groupArr:
     groupObj = {
-        # "sumScore": 0,
-        "sumScore": '/',
+        "sumScore": 0,
+        # "sumScore": '/',
         "list": [],
         "category_id": '',
         "category_name": ''
@@ -57,17 +57,17 @@ for groupItem in groupArr:
         if groupItem['category_id'] == voteItem['category_id']:
             groupObj['category_id'] = groupItem['category_id']
             groupObj['category_name'] = groupItem['category_name']
-            # groupObj['sumScore'] += voteItem['raw_score']
+            groupObj['sumScore'] += voteItem['raw_score']
             for item_vote_id in groupItem['item_id']:
                 if voteItem['item_id'] == item_vote_id:
                     active_item = 1
             groupObj['list'].append({
                 "item_name": voteItem['item_name'],
-                # "score": voteItem['raw_score'],
-                "score": "/",
+                "score": voteItem['raw_score'],
+                # "score": "/",
                 "active_item": active_item,
-                # "weight": voteItem['score'],
-                "weight": "/",
+                "weight": voteItem['score'],
+                # "weight": "/"
                 "item_image": voteItem['item_image']
             })
     resultArr.append(groupObj)
