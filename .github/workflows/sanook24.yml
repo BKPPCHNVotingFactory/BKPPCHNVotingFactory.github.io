@@ -4,6 +4,7 @@ name: GetSanookData
 
 # 在什么时候触发， push 是 git push 时触发，可以设置定时
 on: 
+  workflow_dispatch:
   pull_request:
     branches:
       - main
