@@ -39,10 +39,10 @@ $(document).ready(function () {
           $("<tr/>", {
             class: item_list.active_item == 1 ? "active_item" : "",
           }).append(
-            $("<th/>", {
-              scope: "row",
-              html: h + 1,
-            }),
+            // $("<th/>", {
+            //   scope: "row",
+            //   html: h + 1,
+            // }),
             $("<td/>", {
               html: item_list.item_name,
             }),
@@ -77,10 +77,10 @@ $(document).ready(function () {
           }).append(
             $("<thead/>").append(
               $("<tr/>").append(
-                $("<th/>", {
-                  scope: "col",
-                  html: "排名",
-                }),
+                // $("<th/>", {
+                //   scope: "col",
+                //   html: "排名",
+                // }),
                 $("<th/>", {
                   scope: "col",
                   html: "姓名",
