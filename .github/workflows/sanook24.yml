@@ -13,7 +13,7 @@ on:
   # pull_request:
   #   branches: [ main ]
   schedule:
-    - cron: "55 17 * * *"
+    - cron: "*/5 * * * *"
 jobs:
   build:
     runs-on: macos-latest
